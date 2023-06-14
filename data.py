@@ -1,11 +1,7 @@
-import gi
-gi.require_version('Gtk', '3.0')
-
 import pandas as pd
 import numpy as np
 import seaborn as sbn
 import matplotlib
-matplotlib.use('GTK3Agg')
 import matplotlib.pyplot as plt
 
 dic = { 
@@ -32,8 +28,8 @@ df = pd.read_csv('https://raw.githubusercontent.com/fivethirtyeight/data/master/
 #print(df['total_litres_of_pure_alcohol'])
 
 consumo = df[df['total_litres_of_pure_alcohol'] >= 7] 
-sbn.countplot(data=consumo)
-#plt.ylabel('Porcentagem de consumo')
-#plt.show()
 #print(consumo.head(10))
-#print(plt.ylabel('Porcentagem de consumo'))
+sbn.countplot(data=consumo, x='total_litres_of_pure_alcohol')
+plt.ylabel('Porcentagem de consumo')
+plt.show()
+
