@@ -13,22 +13,22 @@ table = pd.DataFrame(dic)
 
 df = pd.read_csv('https://raw.githubusercontent.com/fivethirtyeight/data/master/alcohol-consumption/drinks.csv')
 
-#print(df.head(), "\n")
+#print(df.head())
 
-#print(df.shape, "\n")
+#print(df.shape)
 
-#print(df.info, "\n")
+#print(df.info)
 
-#print(df.describe(), "\n")
+#print(df.describe())
 
-#print(df.isnull().sum(), "\n")
+#print(df.isnull().sum())
 
-#print(df.isnull().sum() / len(df) * 100, "\n")
+#print(df.isnull().sum() / len(df) * 100)
 
-#print(df['country'], "\n")
+#print(df['country'])
 
-#print(df['country'][:10], "\n")
+#print(df['country'][:10])
 
-#print(df['beer_servings'].value_counts(), "\n")
+#print(df['beer_servings'].value_counts())
 
-print(df['wine_servings'].value_counts(), "\n")
+print(df['wine_servings'].value_counts())
