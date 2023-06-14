@@ -9,23 +9,26 @@ dic = {
 }
 
 table = pd.DataFrame(dic)
-print("table.head():\n", table.head(), "\n")
+# print(table.head())
 
 df = pd.read_csv('https://raw.githubusercontent.com/fivethirtyeight/data/master/alcohol-consumption/drinks.csv')
-print("df.head():\n", df.head(), "\n")
 
-print("df.shape: ", df.shape, "\n")
+#print(df.head(), "\n")
 
-print("df.info:\n", df.info, "\n")
+#print(df.shape, "\n")
 
-print("df.describe():\n", df.describe())
+#print(df.info, "\n")
 
-print("df.isnull().sum():\n", df.isnull().sum())
+#print(df.describe(), "\n")
 
-print("df.isnull().sum() / len(df) * 100:\n", df.isnull().sum() / len(df) * 100, "\n")
+#print(df.isnull().sum(), "\n")
 
-print("df['country']:\n", df['country'], "\n")
+#print(df.isnull().sum() / len(df) * 100, "\n")
 
-print("df['country'][:10]:\n", df['country'][:10])
+#print(df['country'], "\n")
 
-print("df", df['beer_servings'].value_count())
+#print(df['country'][:10], "\n")
+
+#print(df['beer_servings'].value_counts(), "\n")
+
+print(df['wine_servings'].value_counts(), "\n")
