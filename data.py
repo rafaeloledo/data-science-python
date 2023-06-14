@@ -11,19 +11,21 @@ dic = {
 table = pd.DataFrame(dic)
 print("table.head():\n", table.head(), "\n")
 
-data_frame = pd.read_csv('https://raw.githubusercontent.com/fivethirtyeight/data/master/alcohol-consumption/drinks.csv')
-print("data_frame.head():\n", data_frame.head(), "\n")
+df = pd.read_csv('https://raw.githubusercontent.com/fivethirtyeight/data/master/alcohol-consumption/drinks.csv')
+print("df.head():\n", df.head(), "\n")
 
-print("data_frame.shape: ", data_frame.shape, "\n")
+print("df.shape: ", df.shape, "\n")
 
-print("data_frame.info:\n", data_frame.info, "\n")
+print("df.info:\n", df.info, "\n")
 
-print("data_frame.describe():\n", data_frame.describe())
+print("df.describe():\n", df.describe())
 
-print("data_frame.isnull().sum():\n", data_frame.isnull().sum())
+print("df.isnull().sum():\n", df.isnull().sum())
 
-print("data_frame.isnull().sum() / len(data_frame) * 100:\n", data_frame.isnull().sum() / len(data_frame) * 100, "\n")
+print("df.isnull().sum() / len(df) * 100:\n", df.isnull().sum() / len(df) * 100, "\n")
 
-print("data_frame['country']:\n", data_frame['country'], "\n")
+print("df['country']:\n", df['country'], "\n")
 
-print("data_frame['country'][:10]:\n", data_frame['country'][:10])
+print("df['country'][:10]:\n", df['country'][:10])
+
+print("df", df['beer_servings'].value_count())
