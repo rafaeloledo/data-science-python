@@ -20,3 +20,10 @@ print("data_frame.info:\n", data_frame.info, "\n")
 
 print("data_frame.describe():\n", data_frame.describe())
 
+print("data_frame.isnull().sum():\n", data_frame.isnull().sum())
+
+print("data_frame.isnull().sum() / len(data_frame) * 100:\n", data_frame.isnull().sum() / len(data_frame) * 100, "\n")
+
+print("data_frame['country']:\n", data_frame['country'], "\n")
+
+print("data_frame['country'][:10]:\n", data_frame['country'][:10])
