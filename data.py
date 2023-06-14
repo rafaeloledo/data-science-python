@@ -9,7 +9,7 @@ dic = {
     "coluna 2": ['linha1', 'linha2', 'linha3']    
 }
 
-table = pd.DataFrame(dic)
+#table = pd.DataFrame(dic)
 # print(table.head())
 
 df = pd.read_csv('https://raw.githubusercontent.com/fivethirtyeight/data/master/alcohol-consumption/drinks.csv')
@@ -31,5 +31,8 @@ consumo = df[df['total_litres_of_pure_alcohol'] >= 7]
 #print(consumo.head(10))
 sbn.countplot(data=consumo, x='total_litres_of_pure_alcohol')
 plt.ylabel('Porcentagem de consumo')
-plt.show()
+plt.xlabel('Total litres of Pure Alcohol')
+#plt.show()
 
+#print(consumo.describe())
+print(df.describe())
