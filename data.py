@@ -9,7 +9,10 @@ dic = {
 }
 
 table = pd.DataFrame(dic)
+print("table head: \n", table.head())
 
-print(table.head())
+data_frame = pd.read_csv('https://raw.githubusercontent.com/fivethirtyeight/data/master/alcohol-consumption/drinks.csv')
+print("data frame head: \n", data_frame.head())
 
+print("total lines and column: ", data_frame.shape)
 
