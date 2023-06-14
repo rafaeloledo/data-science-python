@@ -31,4 +31,8 @@ df = pd.read_csv('https://raw.githubusercontent.com/fivethirtyeight/data/master/
 
 #print(df['beer_servings'].value_counts())
 
-print(df['wine_servings'].value_counts())
+#print(df['wine_servings'].value_counts())
+
+#print(df['wine_servings'].value_counts().sort_values())
+
+#print(df[df['country'] == 'Brazil'])
